@@ -1,0 +1,19 @@
+x = 20
+
+alpha = 0.1
+epochs = 20
+
+for epoch in range(epochs):
+
+    grad = 2 * (x - 5)
+    x = x - alpha * grad
+
+    grad = 2 * (x - 6)
+    x = x - alpha * grad
+
+    grad = 2 * (x - 7)
+    x = x - alpha * grad
+
+    print(f"Epoch {epoch+1}: x = {x}")
+
+print("Final x =", x)
